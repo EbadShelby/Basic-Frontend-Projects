@@ -1,7 +1,9 @@
-<script setup></script>
+<script setup>
+import "../main.css";
+import FlipCoin from '../components/FlipCoin.vue';
+</script>
 
 <template>
-  <h1>You did it!</h1>
+  <FlipCoin />
 </template>
 
-<style></style>

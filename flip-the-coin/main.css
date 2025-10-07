@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+@theme {
+  --color-midnight-blue: #404A65;
+  --color-royal-blue: #1F6FB0;
+  --color-white-blue: #ECEDF0;
+  --color-gray-blue: #35383F;
+}
+@layer base {
+
+}
+@layer components {
+
+}
+@layer utilities {
+
+}
