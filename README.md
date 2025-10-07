@@ -1,5 +1,5 @@
 # Frontend-Projects
-This Repo is for my Frontend projects to improve my skills in <b>JS, Vue, and Tailwind</b><br>before I dive into Advanced Frontend Projects then dive into Backend.
+This repository is for my frontend projects, created to improve my skills in JavaScript, Vue, and Tailwind, before I dive into advanced frontend projects and then move on to backend development.
 
 ## Flip The Coin
 <img width="300px" src="https://github.com/user-attachments/assets/5fe28dea-19e2-4058-af75-2764481df007"/>
