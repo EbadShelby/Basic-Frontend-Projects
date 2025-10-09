@@ -1,7 +1,11 @@
-<script setup></script>
+<script setup>
+import { ref } from 'vue';
+import Faq from './components/Faq.vue';
+
+</script>
 
 <template>
-  <header></header>
-
-  <main></main>
+  <main>
+    <Faq />
+  </main>
 </template>
