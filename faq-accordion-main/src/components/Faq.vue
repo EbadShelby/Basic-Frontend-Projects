@@ -4,7 +4,7 @@ import { PlusIcon } from "@heroicons/vue/24/solid";
 import { PlusCircleIcon } from "@heroicons/vue/24/solid";
 import { MinusCircleIcon } from "@heroicons/vue/24/solid";
 import { ref } from "vue";
-import { motion } from "motion-v";
+import { motion, AnimatePresence } from "motion-v";
 
 const faqs = ref(faqsData);
 console.log(faqs.value[0].question);
@@ -42,14 +42,17 @@ const toggle = (i) => {
           leave-from-class="opacity-100 max-h-40"
           leave-to-class="opacity-0 max-h-0"
         > -->
-        <motion.p
-          v-if="openStates[i]"
-          class="max-w-120"
-          :initial="{ scale: 0 }"
-          :animate="{ scale: 1 }"
-        >
-          {{ faq.answer }}
-        </motion.p>
+        <AnimatePresence>
+          <motion.p
+            v-if="openStates[i]"
+            class="max-w-120"
+            :initial="{ scale: 0 }"
+            :animate="{ scale: 1 }"
+            :exit="{ opacity: 0 }"
+          >
+            {{ faq.answer }}
+          </motion.p>
+        </AnimatePresence>
         <!-- </Transition> -->
       </div>
       <PlusCircleIcon
