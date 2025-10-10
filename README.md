@@ -6,4 +6,3 @@ This repository is for my <b>Basic frontend projects</b>, created to improve my 
 <a href="https://effulgent-marshmallow-4a6a03.netlify.app">Try it!</a>
 <img width="300px" src="https://github.com/user-attachments/assets/3e7e49d2-e1aa-48d8-ace5-66ba00d73044"/>
 <a href="https://faq-accordion-motion.netlify.app/">Try it!</a>
-![comet_7PyFAzzhVo]()
