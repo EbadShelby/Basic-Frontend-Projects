@@ -1,35 +1,14 @@
 @import "tailwindcss";
+@plugin "tailwindcss-motion";
 
-#app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  font-weight: normal;
-}
+@theme {
+  --color-primary-red-400: hsl(0, 100%, 74%);
+  --color-primary-green-400: hsl(154, 59%, 51%);
 
-a,
-.green {
-  text-decoration: none;
-  color: hsla(160, 100%, 37%, 1);
-  transition: 0.4s;
-  padding: 3px;
-}
+  --color-accent-purple-700: hsl(248, 32%, 49%);
 
-@media (hover: hover) {
-  a:hover {
-    background-color: hsla(160, 100%, 37%, 0.2);
-  }
-}
+  --color-neutral-gray-900: hsl(249, 10%, 26%);
+  --color-neutral-purple-350: hsl(246, 25%, 77%);
 
-@media (min-width: 1024px) {
-  body {
-    display: flex;
-    place-items: center;
-  }
-
-  #app {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 0 2rem;
-  }
+  --font-family-primary: "Poppins", sans-serif;
 }
