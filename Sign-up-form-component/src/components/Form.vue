@@ -45,9 +45,6 @@ const submitForm = () => {
   if (hasError) {
     return;
   }
-
-  // Continue with form submission if no errors
-  console.log("Form submitted successfully");
 };
 </script>
 
@@ -80,68 +77,126 @@ const submitForm = () => {
       >
         <div>
           <label for="firstName"></label>
-          <input
-            v-model="firstName"
-            :class="[
-              inputClass,
-              errors.firstName
-                ? 'border-primary-red-400 placeholder-primary-red-400 focus:outline-primary-red-400 border-2'
-                : 'border-gray-300',
-            ]"
-            id="firstName"
-            name="firstName"
-            type="text"
-            placeholder="First Name"
-          />
+          <div class="relative">
+            <input
+              v-model="firstName"
+              :class="[
+                inputClass,
+                errors.firstName
+                  ? 'border-primary-red-400 placeholder-primary-red-400 focus:outline-primary-red-400 border-2'
+                  : 'border-gray-300',
+              ]"
+              id="firstName"
+              name="firstName"
+              type="text"
+              placeholder="First Name"
+            />
+            <img
+              v-if="errors.firstName"
+              src="@/images/icon-error.svg"
+              alt="error-icon"
+              class="absolute top-1/2 right-6 -translate-y-1/2"
+            />
+          </div>
+          <p
+            v-if="errors.firstName"
+            class="text-primary-red-400 mt-2 text-end text-xs italic"
+          >
+            First Name cannot be empty
+          </p>
         </div>
         <div>
           <label for="lastName"></label>
-          <input
-            v-model="lastName"
-            :class="[
-              inputClass,
-              errors.lastName
-                ? 'border-primary-red-400 placeholder-primary-red-400 focus:outline-primary-red-400 border-2'
-                : 'border-gray-300',
-            ]"
-            id="lastName"
-            name="lastName"
-            type="text"
-            placeholder="Last Name"
-          />
+          <div class="relative">
+            <input
+              v-model="lastName"
+              :class="[
+                inputClass,
+                errors.lastName
+                  ? 'border-primary-red-400 placeholder-primary-red-400 focus:outline-primary-red-400 border-2'
+                  : 'border-gray-300',
+              ]"
+              id="lastName"
+              name="lastName"
+              type="text"
+              placeholder="Last Name"
+            />
+            <img
+              v-if="errors.lastName"
+              src="@/images/icon-error.svg"
+              alt="error-icon"
+              class="absolute top-1/2 right-6 -translate-y-1/2"
+            />
+          </div>
+          <p
+            v-if="errors.lastName"
+            class="text-primary-red-400 mt-2 text-end text-xs italic"
+          >
+            Last Name cannot be empty
+          </p>
         </div>
         <div>
           <label for="emailAdd"></label>
-          <input
-            v-model="email"
-            :class="[
-              inputClass,
-              errors.email
-                ? 'border-primary-red-400 placeholder-primary-red-400 focus:outline-primary-red-400 border-2'
-                : 'border-gray-300',
-            ]"
-            id="emailAdd"
-            name="emailAdd"
-            type="email"
-            placeholder="Email Address"
-          />
+          <div class="relative">
+            <input
+              v-model="email"
+              :class="[
+                inputClass,
+                errors.email
+                  ? 'border-primary-red-400 placeholder-primary-red-400 focus:outline-primary-red-400 border-2'
+                  : 'border-gray-300',
+              ]"
+              id="emailAdd"
+              name="emailAdd"
+              type="email"
+              :placeholder="
+                errors.email ? 'email@example.com' : 'Email Address'
+              "
+            />
+            <img
+              v-if="errors.email"
+              src="@/images/icon-error.svg"
+              alt="error-icon"
+              class="absolute top-1/2 right-6 -translate-y-1/2"
+            />
+          </div>
+          <p
+            v-if="errors.email"
+            class="text-primary-red-400 mt-2 text-end text-xs italic"
+          >
+            Email cannot be empty
+          </p>
         </div>
         <div>
           <label for="password"></label>
-          <input
-            v-model="password"
-            :class="[
-              inputClass,
-              errors.password
-                ? 'border-primary-red-400 placeholder-primary-red-400 focus:outline-primary-red-400 border-2'
-                : 'border-gray-300',
-            ]"
-            id="password"
-            name="password"
-            type="password"
-            minlength="6"
-            placeholder="Password"
-          />
+          <div class="relative">
+            <input
+              v-model="password"
+              :class="[
+                inputClass,
+                errors.password
+                  ? 'border-primary-red-400 placeholder-primary-red-400 focus:outline-primary-red-400 border-2'
+                  : 'border-gray-300',
+              ]"
+              id="password"
+              name="password"
+              type="password"
+              minlength="6"
+              placeholder="Password"
+            />
+            <img
+              v-if="errors.password"
+              src="@/images/icon-error.svg"
+              alt="error-icon"
+              class="absolute top-1/2 right-6 -translate-y-1/2"
+            />
+          </div>
+          <p
+            v-if="errors.password"
+            class="text-primary-red-400 mt-2 text-end text-xs italic"
+          >
+            Password cannot be empty
+          </p>
         </div>
         <button
           type="submit"
