@@ -1,0 +1,21 @@
+TODO's:
+  Make it:
+      Hero:
+        ✔ Logo. @done(25-10-14 19:25)
+        ✔ H1 and paragraph. @done(25-10-13 14:43)
+      Form:
+        ✔ Email input and notify me Button. @done(25-10-13 14:45)
+      Body:
+        ✔ ping illustration. @done(25-10-14 19:25)
+      Footer:
+        ✔ 3 icons. @done(25-10-13 16:16)
+        ✔ copyright. @done(25-10-13 14:43)
+
+  Make it work:
+        ☐ error email warning text.
+
+  Make it Fancy:
+        ☐ style it.
+        ☐ error input styling.
+        ☐ hover and focus state.
+        ☐ add animations.
