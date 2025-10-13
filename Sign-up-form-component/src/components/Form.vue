@@ -2,7 +2,7 @@
 import { ref } from "vue";
 
 const btn =
-  "w-full rounded-lg px-2 py-4 text-white cursor-pointer active:scale-98";
+  "w-full rounded-lg px-2 py-4 text-white cursor-pointer active:scale-96 transition-all duration-50";
 const inputClass =
   "focus:text-neutral-gray-900 w-full rounded border-1 px-2 py-4 pl-4 text-sm font-bold focus:outline-gray-500 sm:pl-8";
 
@@ -52,7 +52,9 @@ const submitForm = () => {
   <div
     class="mx-auto flex max-w-100 flex-col gap-14 px-2 text-center sm:max-w-280 sm:flex-row sm:text-start"
   >
-    <div class="flex flex-col justify-center text-white sm:flex-1">
+    <div
+      class="motion-preset-focus flex flex-col justify-center text-white sm:flex-1"
+    >
       <h1 class="mb-8 text-3xl font-black sm:text-[3rem]/14">
         Learn to code by watching others
       </h1>
@@ -62,7 +64,7 @@ const submitForm = () => {
         invaluable.
       </p>
     </div>
-    <div class="flex-1">
+    <div class="motion-preset-focus flex-1">
       <button
         class="bg-accent-purple-700 btn mb-6 text-sm shadow-[0px_8px_0px_0px] shadow-black/20 sm:text-base"
         :class="btn"
@@ -83,7 +85,7 @@ const submitForm = () => {
               :class="[
                 inputClass,
                 errors.firstName
-                  ? 'border-primary-red-400 placeholder-primary-red-400 focus:outline-primary-red-400 border-2'
+                  ? 'border-primary-red-400 motion-preset-shake placeholder-primary-red-400 focus:outline-primary-red-400 border-2'
                   : 'border-gray-300',
               ]"
               id="firstName"
@@ -95,7 +97,7 @@ const submitForm = () => {
               v-if="errors.firstName"
               src="@/images/icon-error.svg"
               alt="error-icon"
-              class="absolute top-1/2 right-6 -translate-y-1/2"
+              class="motion-preset-compress motion-duration-250 absolute top-1/2 right-6 -translate-y-1/2"
             />
           </div>
           <p
@@ -113,7 +115,7 @@ const submitForm = () => {
               :class="[
                 inputClass,
                 errors.lastName
-                  ? 'border-primary-red-400 placeholder-primary-red-400 focus:outline-primary-red-400 border-2'
+                  ? 'border-primary-red-400 motion-preset-shake placeholder-primary-red-400 focus:outline-primary-red-400 border-2'
                   : 'border-gray-300',
               ]"
               id="lastName"
@@ -125,7 +127,7 @@ const submitForm = () => {
               v-if="errors.lastName"
               src="@/images/icon-error.svg"
               alt="error-icon"
-              class="absolute top-1/2 right-6 -translate-y-1/2"
+              class="motion-preset-compress motion-duration-250 absolute top-1/2 right-6 -translate-y-1/2"
             />
           </div>
           <p
@@ -143,7 +145,7 @@ const submitForm = () => {
               :class="[
                 inputClass,
                 errors.email
-                  ? 'border-primary-red-400 placeholder-primary-red-400 focus:outline-primary-red-400 border-2'
+                  ? 'border-primary-red-400 motion-preset-shake placeholder-primary-red-400 focus:outline-primary-red-400 border-2'
                   : 'border-gray-300',
               ]"
               id="emailAdd"
@@ -157,7 +159,7 @@ const submitForm = () => {
               v-if="errors.email"
               src="@/images/icon-error.svg"
               alt="error-icon"
-              class="absolute top-1/2 right-6 -translate-y-1/2"
+              class="motion-preset-compress motion-duration-250 absolute top-1/2 right-6 -translate-y-1/2"
             />
           </div>
           <p
@@ -175,7 +177,7 @@ const submitForm = () => {
               :class="[
                 inputClass,
                 errors.password
-                  ? 'border-primary-red-400 placeholder-primary-red-400 focus:outline-primary-red-400 border-2'
+                  ? 'border-primary-red-400 placeholder-primary-red-400 focus:outline-primary-red-400 motion-preset-shake border-2'
                   : 'border-gray-300',
               ]"
               id="password"
@@ -188,7 +190,7 @@ const submitForm = () => {
               v-if="errors.password"
               src="@/images/icon-error.svg"
               alt="error-icon"
-              class="absolute top-1/2 right-6 -translate-y-1/2"
+              class="motion-preset-compress motion-duration-250 absolute top-1/2 right-6 -translate-y-1/2"
             />
           </div>
           <p
