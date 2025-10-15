@@ -8,5 +8,7 @@ import pingIllustration from "@/assets/images/illustration-dashboard.png";
 <template>
   <Hero />
   <Form />
-  <img :src="pingIllustration" alt="ping illustration" />
+  <div class="max-w-200 mx-auto">
+    <img class="max-w-160 mx-auto mb-20" :src="pingIllustration" alt="ping illustration" />
+  </div>
 </template>
