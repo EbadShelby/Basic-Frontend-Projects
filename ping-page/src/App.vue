@@ -11,14 +11,31 @@ import logo from "@/assets/images/logo.svg";
   <main class="text-center">
     <PingComponent />
   </main>
-  <footer class="text-center max-w-200 mx-auto">
+  <footer class="mx-auto max-w-200 text-center">
     <div>
       <ul class="flex justify-center gap-4">
-        <font-awesome-icon :icon="['fab', 'facebook-f']" />
-        <font-awesome-icon :icon="['fab', 'x-twitter']" />
-        <font-awesome-icon :icon="['fab', 'instagram']" />
+        <a
+          href="#"
+          class="hover:bg-secondary-blue size-8 rounded border-1 transition-all duration-250 hover:scale-110"
+        >
+          <font-awesome-icon :icon="['fab', 'facebook-f']" />
+        </a>
+        <a
+          href="#"
+          class="hover:bg-secondary-blue size-8 rounded border-1 transition-all duration-250 hover:scale-110"
+        >
+          <font-awesome-icon :icon="['fab', 'x-twitter']" />
+        </a>
+        <a
+          href="#"
+          class="hover:bg-secondary-blue size-8 rounded border-1 transition-all duration-250 hover:scale-110"
+        >
+          <font-awesome-icon :icon="['fab', 'instagram']" />
+        </a>
       </ul>
     </div>
-    <p class="text-xs text-neutral-gray mt-6 mb-10">&copy;Copyright Ping. All rights reserved</p>
+    <p class="text-neutral-gray mt-6 mb-10 text-xs">
+      &copy; Copyright Ping. All rights reserved
+    </p>
   </footer>
 </template>

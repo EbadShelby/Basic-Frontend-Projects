@@ -12,10 +12,11 @@ TODO's:
         ✔ copyright. @done(25-10-13 14:43)
 
   Make it work:
-        ☐ error email warning text.
+        ✔ error email warning text. @done(25-10-16 08:20)
 
   Make it Fancy:
-        ☐ style it.
-        ☐ error input styling.
-        ☐ hover and focus state.
-        ☐ add animations.
+        ✔ style it. @done(25-10-16 08:20)
+        ✔ error input styling. @done(25-10-16 08:20)
+        ✔ hover and focus state. @done(25-10-16 08:25)
+        ✔ add animations icons. @done(25-10-16 08:33)
+        ✔ make it responsive. @done(25-10-16 19:35)
