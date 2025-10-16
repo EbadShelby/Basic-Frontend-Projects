@@ -65,7 +65,7 @@ const submitForm = () => {
         </p>
         <p
           v-if="isSuccess"
-          class="motion-preset-fade-lg absolute px-6 py-2 text-xs text-green-500 italic"
+          class="motion-preset-fade-lg px-6 py-2 text-xs text-green-500 italic sm:absolute"
         >
           {{ message }}
         </p>
