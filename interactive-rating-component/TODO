@@ -1,3 +1,17 @@
 
-Todo:
-  ☐ Item
+Make it:
+  ✔ Create Rating Component @done(25-10-19 07:47)
+  ✔ Create Successful Message Component @done(25-10-20 19:19)
+  
+Make it Work:
+  ✔ create public ratings data to be able to use in the components @done(25-10-19 07:47)
+  ✔ make the rating numbers work @done(25-10-20 19:19)
+  ✔ make the submit button work @done(25-10-20 19:20)
+  ✔ make the success message total rate reactive @done(25-10-20 19:20)
+
+Make it Better:
+  ✔ style the rating components @done(25-10-20 19:20)
+  ✔ style the success message component @done(25-10-21 07:53)
+  ✔ style the rating buttons hover and active @done(25-10-20 19:20)
+  ✔ style the submit button hover and active @done(25-10-20 19:20)
+  ✔ add some animations @done(25-10-21 07:53)
