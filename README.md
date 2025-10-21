@@ -12,3 +12,7 @@ This repository is for my <b>Basic frontend projects</b>, created to improve my 
 <a href="https://faq-accordion-motion.netlify.app/">Try it!</a>
 <img width="300px" src="https://github.com/user-attachments/assets/072c4a28-fef8-4bd1-ad74-0a38e848eccf"/>
 <a href="https://ping-page-fun-animation.netlify.app/">Try it!</a>
+
+## Rating Component ---------------------  <br>
+<img width="300px" src="https://github.com/user-attachments/assets/79a2f726-1aa7-4880-90e2-39da163a4fc6"/>
+<a href="https://rating-component-w-cool-animation.netlify.app//">Try it!</a>
